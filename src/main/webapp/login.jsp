@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <h6>version:1.0</h6>
+    <h6>version:2.0</h6>
     <form action="login" method="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
