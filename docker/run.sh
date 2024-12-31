@@ -6,7 +6,7 @@ set -o nounset
 
 Project_Web_Src_Package=
 if [ ! -z "./${Project_Web_Src_Package:=MyWebApp.war}" ];then 
-    if [ -e "./$Project_Web_Src_Package" -o  -e "./$Project_Web_Src_Package" ];then
+    if [ -e "./$Project_Web_Src_Package" -o  ! -e "./$Project_Web_Src_Package" ];then
         rm -rf ./$Project_Web_Src_Package
         mv ../target/$Project_Web_Src_Package ./ -f
     fi
